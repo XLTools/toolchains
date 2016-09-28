@@ -11,19 +11,11 @@ The current host OS for the cross-compiler is Ubuntu, 16.04, using [MXE](https:/
 To install the 32- and 64-bit toolkits, run:
 
 ```bash
-sudo apt install \
-    autoconf automake autopoint bash bison bzip2 flex gettext\
-    git g++ gperf intltool libffi-dev libgdk-pixbuf2.0-dev \
-    libtool libltdl-dev libssl-dev libxml-parser-perl make \
-    openssl p7zip-full patch perl pkg-config python ruby scons \
-    sed unzip wget xz-utils g++-multilib libc6-dev-i386ads
+sudo apt install mxe-i686-w64-mingw32.static-gcc \
+    mxe-x86-64-w64-mingw32.static-gcc \
+    mxe-i686-w64-mingw32.static-pthreads \
+    mxe-x86-64-w64-mingw32.static-pthreads
 ```
-
-Then, in the MXE directory, type:
-```
-make MXE_TARGETS='x86_64-w64-mingw32.static i686-w64-mingw32.static' MXE_PLUGIN_DIRS=plugins/gcc6
-```
-
 
 ## OSXCross
 
