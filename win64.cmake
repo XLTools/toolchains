@@ -8,6 +8,7 @@ SET(CMAKE_SYSTEM_NAME Windows)
 SET(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc-posix)
 SET(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++-posix)
 SET(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)
+set(CMAKE_COMPILER_PREFIX x86_64-w64-mingw32-)
 
 # PATHS
 # -----
