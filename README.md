@@ -17,21 +17,6 @@ sudo apt install mxe-i686-w64-mingw32.static-gcc \
     mxe-x86-64-w64-mingw32.static-pthreads
 ```
 
-## OSXCross
-
-To install OSXCross, you first need:
-
-```bash
-sudo apt install clang patch libxml2-dev
-```
-
-Then, download and install OSXCross from the Git repository:
-
-```
-git clone https://github.com/tpoechtrager/osxcross
-cd osxcross
-```
-
 The compilers will be installed under `/usr/lib/mxe/usr/bin/`.
 
 ## Toolkits
